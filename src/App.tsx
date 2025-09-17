@@ -6,8 +6,6 @@ import MapPage from './pages/MapPage';
 import AddCenterPage from './pages/AddCenterPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-import LoginPage from './pages/LoginPage';
-import SignUpPage from './pages/SignUpPage';
 import { I18nContext } from './main';
 
 function App() {
@@ -22,8 +20,6 @@ function App() {
           <Route path="/add-center" element={<AddCenterPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/sign-up" element={<SignUpPage />} />
         </Routes>
       </div>
     </Router>

@@ -1,6 +1,6 @@
 import React, { useContext, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Recycle, Home, MapPin, Info, Phone, Plus, LogIn, UserPlus } from 'lucide-react';
+import { Recycle, Home, MapPin, Info, Phone, Plus } from 'lucide-react';
 import { I18nContext } from '../main';
 
 export default function Header() {
@@ -94,28 +94,7 @@ export default function Header() {
               <Phone className="h-4 w-4" />
               <span>{t.contact}</span>
             </Link>
-            <Link
-              to="/login"
-              className={`relative flex items-center space-x-2 px-4 py-2 rounded-xl transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 ${
-                isActive('/login')
-                  ? 'bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 shadow-inner-glow after:absolute after:left-4 after:right-4 after:-bottom-1 after:h-0.5 after:bg-primary-500 after:rounded-full'
-                  : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-secondary-50 hover:shadow-md'
-              }`}
-            >
-              <LogIn className="h-4 w-4" />
-              <span>Kirish</span>
-            </Link>
-            <Link
-              to="/sign-up"
-              className={`relative flex items-center space-x-2 px-4 py-2 rounded-xl transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 ${
-                isActive('/sign-up')
-                  ? 'bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 shadow-inner-glow after:absolute after:left-4 after:right-4 after:-bottom-1 after:h-0.5 after:bg-primary-500 after:rounded-full'
-                  : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-secondary-50 hover:shadow-md'
-              }`}
-            >
-              <UserPlus className="h-4 w-4" />
-              <span>Ro'yxatdan o'tish</span>
-            </Link>
+            
           </nav>
           
           {/* Controls removed: only Uzbek language */}
