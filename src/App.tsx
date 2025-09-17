@@ -15,7 +15,7 @@ function App() {
       <div className={`min-h-screen bg-gray-50`}>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/EcoMapUzbekistan" element={<HomePage />} />
           <Route path="/map" element={<MapPage />} />
           <Route path="/add-center" element={<AddCenterPage />} />
           <Route path="/about" element={<AboutPage />} />

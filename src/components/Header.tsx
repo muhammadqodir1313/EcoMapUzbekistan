@@ -21,7 +21,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-xl">
+          <Link to="/EcoMapUzbekistan" className="flex items-center space-x-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-xl">
             <div className="bg-gradient-to-br from-primary-500 to-secondary-500 p-2 rounded-xl shadow-glow">
               <Recycle className="h-6 w-6 text-white" />
             </div>
@@ -36,9 +36,9 @@ export default function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link
-              to="/"
+              to="/EcoMapUzbekistan"
               className={`relative flex items-center space-x-2 px-4 py-2 rounded-xl transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 ${
-                isActive('/') 
+                isActive('/EcoMapUzbekistan') 
                   ? 'bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 shadow-inner-glow after:absolute after:left-4 after:right-4 after:-bottom-1 after:h-0.5 after:bg-primary-500 after:rounded-full' 
                   : 'text-gray-600 hover:text-primary-600 hover:bg-gradient-to-r hover:from-primary-50 hover:to-secondary-50 hover:shadow-md'
               }`}
